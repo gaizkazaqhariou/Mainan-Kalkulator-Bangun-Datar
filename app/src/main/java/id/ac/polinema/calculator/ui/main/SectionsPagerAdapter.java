@@ -9,6 +9,9 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import id.ac.polinema.calculator.R;
+import id.ac.polinema.calculator.bujur;
+import id.ac.polinema.calculator.persegi;
+import id.ac.polinema.calculator.segitiga;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
@@ -27,20 +30,39 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        // getItem is called to instantiate the fragment for the given page.
-        // Return a PlaceholderFragment (defined as a static inner class below).
-        return PlaceholderFragment.newInstance(position + 1);
+        switch (position) {
+            case 0:
+                bujur b = new bujur();
+                return b;
+            case 1:
+                persegi p = new persegi();
+                return p;
+            case 2:
+                segitiga s = new segitiga();
+                return s;
+            default:
+                return null;
+        }
     }
 
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
-        return mContext.getResources().getString(TAB_TITLES[position]);
+        switch (position) {
+            case 0:
+                return "Bujur Sangkar";
+            case 1:
+                return "Persegi";
+            case 2:
+                return "Segitiga";
+            default:
+                return null;
+        }
     }
 
     @Override
     public int getCount() {
         // Show 2 total pages.
-        return 2;
+        return 3;
     }
 }
