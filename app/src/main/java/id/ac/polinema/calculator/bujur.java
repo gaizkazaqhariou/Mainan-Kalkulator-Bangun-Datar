@@ -18,8 +18,8 @@ public class bujur extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         final View root = inflater.inflate(R.layout.tab_bujur, container, false);
 
-        final TextView panjang = root.findViewById(R.id.etPanjang);
-        final TextView lebar = root.findViewById(R.id.etLebar);
+        final TextView panjang = root.findViewById(R.id.etPanjangB);
+        final TextView lebar = root.findViewById(R.id.etLebarB);
         Button hasilB = root.findViewById(R.id.btBujur);
         hasilB.setOnClickListener(new View.OnClickListener() {
             @Override

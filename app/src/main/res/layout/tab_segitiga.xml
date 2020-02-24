@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Panjang :"
+        android:text="Tinggi:"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.28"
@@ -18,7 +18,7 @@
         app:layout_constraintVertical_bias="0.143" />
 
     <EditText
-        android:id="@+id/etPanjang"
+        android:id="@+id/etTinggiS"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:inputType="number"
@@ -33,7 +33,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lebar :"
+        android:text="Alas :"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.327"
@@ -43,7 +43,7 @@
         app:layout_constraintVertical_bias="0.242" />
 
     <EditText
-        android:id="@+id/etLebar"
+        android:id="@+id/etAlasS"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:inputType="number"

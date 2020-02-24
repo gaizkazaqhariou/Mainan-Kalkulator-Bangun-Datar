@@ -18,7 +18,7 @@
         app:layout_constraintVertical_bias="0.143" />
 
     <EditText
-        android:id="@+id/etPanjang"
+        android:id="@+id/etPanjangB"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:inputType="number"
@@ -43,7 +43,7 @@
         app:layout_constraintVertical_bias="0.242" />
 
     <EditText
-        android:id="@+id/etLebar"
+        android:id="@+id/etLebarB"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:inputType="number"
