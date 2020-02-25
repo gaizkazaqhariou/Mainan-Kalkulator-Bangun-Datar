@@ -19,17 +19,14 @@ public class bujur extends Fragment {
         final View root = inflater.inflate(R.layout.tab_bujur, container, false);
 
         final TextView panjang = root.findViewById(R.id.etPanjangB);
-        final TextView lebar = root.findViewById(R.id.etLebarB);
         Button hasilB = root.findViewById(R.id.btBujur);
         hasilB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String bujurpanjang = panjang.getText().toString();
-                String bujurlebar = lebar.getText().toString();
-                if (!TextUtils.isEmpty(bujurlebar) && !TextUtils.isEmpty(bujurpanjang)) {
-                    int L = Integer.parseInt(bujurlebar);
+                if (!TextUtils.isEmpty(bujurpanjang)) {
                     int P = Integer.parseInt(bujurpanjang);
-                    int hasil = L * P / 2;
+                    int hasil = P * P;
 
                     Intent intent = new Intent(getActivity(), HasilActivity.class);
                     intent.putExtra("hasil", hasil);
